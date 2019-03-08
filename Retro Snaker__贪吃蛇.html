@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇小案例</title>
+    <style>
+        .map {
+            width: 600px;
+            height: 400px;
+            background-color: #CCCCCC;
+            position: relative;
+        }
+    </style>
+    <script type="text/javascript" src="food.js"></script>
+    <script type="text/javascript" src="snake.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+    <!--地图的描述-->
+    <div class="map"></div>
+    <script type="text/javascript">
+        //实例化游戏，初始化游戏对象
+        var gm = new Game(document.querySelector(".map"));
+        //初始化游戏
+        gm.init();
+    </script>
+</body>
+</html>
